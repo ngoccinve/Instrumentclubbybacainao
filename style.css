@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: #ffffff;
+    line-height: 1.8;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.85), rgba(0,0,0,0.85)),
+        url("background.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* HEADER */
+.header {
+    min-height: 100vh;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;   /* ← DÒNG QUAN TRỌNG */
+
+    text-align: center;    /* ← để chữ cũng ở giữa */
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("background-header.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+.header {
+    min-height: 100vh;
+    padding: 80px 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("music-bg.jpg");
+
+    background-size: cover;
+    background-position: center;
+}
+
+.header h1 {
+    font-size: 48px;
+}
+
+.header p {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 28px;
+    background-color: #ffffff;
+    color: #2575fc;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+/* SECTION */
+section {
+    padding: 60px 10%;
+}
+
+h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* ABOUT */
+.about p {
+    max-width: 700px;
+}
+
+/* ACTIVITIES */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #1c1c25;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    min-width: 250px;
+}
+
+/* MEMBERS */
+.members ul {
+    list-style: none;
+}
+
+.members li {
+    margin-bottom: 10px;
+}
+
+/* CONTACT */
+.contact {
+    background-color: #1c1c25;
+    border-radius: 20px;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    font-size: 14px;
+}
+
+.fa-calendar-days {
+    color: #ffd166; /* vàng */
+}
+
+.fa-clock {
+    color: #06d6a0; /* xanh lá */
+}
+
+.fa-location-dot {
+    color: #ef476f; /* đỏ hồng */
+}
+
+
+.instrument-showcase {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.instrument-row {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Ẩn radio */
+.instrument-row input {
+    display: none;
+}
+
+/* Card mặc định */
+.instrument {
+    width: 200px;
+    background: white;
+    color: black;
+    border-radius: 25px;
+    padding: 20px;
+    cursor: pointer;
+    transition: 0.4s;
+    opacity: 0.6;
+}
+
+.instrument img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+/* Hover nhẹ */
+.instrument:hover {
+    opacity: 0.85;
+}
+
+/* Khi click (được chọn) */
+input:checked + .instrument {
+    background: linear-gradient(135deg, #ffb703, #ff8c00);
+    color: white;
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+}
+
+
+
+
+
+.join {
+  background: linear-gradient(135deg, #1f2933, #374151);
+  color: #ffffff;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+.join h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.join p {
+  font-size: 14px;
+  opacity: 0.9;
+}
+.contact-box button {
+  width: 100%;
+  padding: 12px;
+  background: #2563eb;
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+footer {
+  background: #0f172a;
+  color: #cbd5f5;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 13px;
+}
+.contact-box input,
+.contact-box textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 1px solid #cbd5e1;
+  font-size: 14px;
+  outline: none;
+}
+
+.contact-box textarea {
+  min-height: 100px;
+  resize: none;
+}
+.contact-box {
+  background: #ffffff;
+  padding: 30px;
+  width: 100%;
+  max-width: 420px;
+  border-radius: 18px;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.2);
+}
+.contact {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #9ca3af, #d1d5db);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.join-header {
+  background: linear-gradient(135deg, #4b5563, #6b7280);
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
